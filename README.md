@@ -16,12 +16,13 @@ This is a solution to the [Tip calculator app challenge on Frontend Mentor](http
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot-desktop.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: []()
-- Live Site URL: []()
+- Solution URL: [https://github.com/Roman-oryol/tip-calculator-app](https://github.com/Roman-oryol/tip-calculator-app)
+- Live Site URL: [https://ro-tip-calculator-app.netlify.app/](https://ro-tip-calculator-app.netlify.app/)
 
 ## My process
 

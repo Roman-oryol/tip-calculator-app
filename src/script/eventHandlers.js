@@ -41,7 +41,7 @@ const handleInputEntry = debounce(() => {
   }
 }, 500);
 
-const handleTipCustomInput = (e) => {
+const handleTipCustomInput = debounce((e) => {
   const tip = Number(e.target.value);
   const buttons = document.querySelectorAll('.form__tip-button');
   buttons.forEach((button) => {
@@ -56,6 +56,6 @@ const handleTipCustomInput = (e) => {
   }
 
   showResult(tip, data);
-};
+}, 500);
 
 export { handleInputEntry, handleTipCalculation, handleTipCustomInput };
