@@ -1,12 +1,10 @@
 import debounce from 'debounce';
-// import animateValue from './script/animate-value';
 import { restrictInvalidKeys } from './script/utils.js';
 import { resetError, resetResult } from './script/ui.js';
 
 const form = document.getElementById('form');
 const inputs = document.querySelectorAll('input');
 const billInput = document.getElementById('bill');
-// const tipButtons = document.querySelectorAll('form__tip-button');
 const tipCustomInput = document.getElementById('tip-custom');
 const numberPeopleInput = document.getElementById('people-input');
 // const tipAmountOutput = document.getElementById('tip-amount');

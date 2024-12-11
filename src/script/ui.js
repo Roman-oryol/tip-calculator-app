@@ -9,6 +9,7 @@ const resetBtn = document.getElementById('reset-btn');
 const displayError = () => {
   const numberPeopleInput = document.getElementById('people-number');
   numberPeopleInput.classList.add('form__input-group--error');
+  document.getElementById('people-input').focus();
 };
 
 const resetError = (e) => {
