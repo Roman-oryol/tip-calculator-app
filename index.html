@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="src/assets/fonts/SpaceMono-Bold.ttf"
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="src/styles/style.scss" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <header class="logo">
+      <img
+        src="/images/logo.svg"
+        width="87"
+        height="54"
+        alt="Application logo"
+      />
+    </header>
+    <main class="app">
+      <form class="app__form form" id="form">
+        <div class="form__left-col">
+          <div class="form__input-group form__input-group--bill">
+            <label for="bill">Bill</label>
+            <input
+              class="form__bill"
+              name="bill"
+              min="0"
+              id="bill"
+              type="number"
+              step="0.01"
+              placeholder="0"
+            />
+          </div>
+          <p class="form_select-tip-title">Select Tip %</p>
+          <div class="form__tip-selection">
+            <button class="form__tip-button" type="submit" data-tip="5">
+              5%
+            </button>
+            <button class="form__tip-button" type="submit" data-tip="10">
+              10%
+            </button>
+            <button class="form__tip-button" type="submit" data-tip="15">
+              15%
+            </button>
+            <button class="form__tip-button" type="submit" data-tip="25">
+              25%
+            </button>
+            <button class="form__tip-button" type="submit" data-tip="50">
+              50%
+            </button>
+            <input
+              type="number"
+              class="form__tip-custom"
+              name="custom"
+              min="0"
+              id="tip-custom"
+              placeholder="Custom"
+            />
+          </div>
+
+          <div
+            class="form__input-group form__input-group--people-number"
+            id="people-number"
+          >
+            <p>
+              <label for="people-number">Number of People</label>
+              <span class="form__input-error" id="error-message"
+                >Cant`t be zero</span
+              >
+            </p>
+            <input
+              class="form__people-number"
+              type="number"
+              name="people"
+              id="people-input"
+              min="0"
+              placeholder="0"
+            />
+          </div>
+        </div>
+        <div class="form__right-col">
+          <div class="form__result">
+            <div class="form__result-output-wrap">
+              <div class="form__result-item">
+                <p class="form_result-title">
+                  Tip Amount<br /><span>/ person</span>
+                </p>
+                <p class="form__result-output">
+                  $<span id="tip-amount">0.00</span>
+                </p>
+              </div>
+              <div class="form__result-item">
+                <p class="form_result-title">
+                  Total<br /><span>/ person</span>
+                </p>
+                <p class="form__result-output">$<span id="total">0.00</span></p>
+              </div>
+            </div>
+            <button
+              class="form__result-reset"
+              type="reset"
+              id="reset-btn"
+              disabled
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+      </form>
+    </main>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

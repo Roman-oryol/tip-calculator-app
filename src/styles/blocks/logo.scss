@@ -1,0 +1,12 @@
+.logo {
+  padding-top: 50px;
+  padding-bottom: 40px;
+
+  img {
+    margin: 0 auto;
+  }
+
+  @media (min-width: 920px) {
+    padding-bottom: 87px;
+  }
+}

@@ -1,0 +1,14 @@
+@use './common/resets' as *;
+@use './common/fonts' as *;
+@use './common/variables' as *;
+@use './common/helpers' as *;
+@use './blocks/logo.scss' as *;
+@use './blocks/app.scss' as *;
+@use './blocks/form.scss' as *;
+
+body {
+  min-width: 320px;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  background-color: var(--color-light-grayish-cyan);
+}
